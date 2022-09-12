@@ -17,11 +17,20 @@ from django.contrib import admin
 from django.urls import path 
 
 from firstApp import views as app1
+<<<<<<< HEAD
 
+=======
+from secondApp import views as app2
+>>>>>>> APP2
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("hola/", app1.display),
     path("ahora/", app1.displayDateTime),
+<<<<<<< HEAD
+=======
+    path("input/",app2.displayInput),
+    path("link/",app2.displayLink),
+>>>>>>> APP2
 ]
